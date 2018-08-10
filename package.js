@@ -1,8 +1,8 @@
 Package.describe({
-  name: "mizzao:timesync",
+  name: "matiasjr:2mundos-mizzao-timesync",
   summary: "NTP-style time synchronization between server and client",
   version: "0.5.0",
-  git: "https://github.com/mizzao/meteor-timesync.git"
+  git: "https://github.com/matiasvjr/meteor-timesync.git"
 });
 
 Package.onUse(function (api) {
@@ -34,7 +34,7 @@ Package.onTest(function (api) {
 
   api.use(["tracker", "underscore"], 'client');
 
-  api.use("mizzao:timesync");
+  api.use("matiasjr:2mundos-mizzao-timesync");
 
   api.addFiles('tests/client.js', 'client');
 });
